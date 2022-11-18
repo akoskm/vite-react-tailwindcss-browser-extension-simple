@@ -1,0 +1,34 @@
+{
+  "name": "Vite/React/TailwindCSS Plugin",
+  "description": "A Cross Browser Template for Firefox",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Open the popup"
+  },
+  "optional_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://blank.org/*"
+      ],
+      "run_at": "document_end",
+      "js": [
+        "./index.global.js"
+      ],
+      "css": [
+        "./style.css"
+      ]
+    }
+  ],
+  "background": {
+    "page": "background.html",
+    "persistent": false
+  },
+  "icons": {
+    "128": "vite.svg"
+  }
+}

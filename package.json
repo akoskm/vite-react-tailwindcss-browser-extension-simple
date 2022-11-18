@@ -1,0 +1,33 @@
+{
+  "name": "vite-react-tailwindcss-extension",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "build:manifest:chrome": "mv dist/manifestv3.json dist/manifest.json",
+    "build:background:chrome": "vite build --config vite.chrome.background.config.ts",
+    "build:js": "vite build --config vite.content.config.ts",
+    "build:web": "tsc && vite build",
+    "build": "NODE_ENV=production run-s build:js build:web",
+    "build:chrome": "NODE_ENV=production run-s build:js build:background:chrome build:web build:manifest:chrome"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@types/webextension-polyfill": "^0.9.1",
+    "@vitejs/plugin-react": "^2.2.0",
+    "autoprefixer": "^10.4.13",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3",
+    "webextension-polyfill": "^0.10.0"
+  }
+}
