@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite build --watch",
     "preview": "vite preview",
     "build:manifest:chrome": "mv dist/manifestv3.json dist/manifest.json",
     "build:background:chrome": "vite build --config vite.chrome.background.config.ts",
