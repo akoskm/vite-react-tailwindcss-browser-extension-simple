@@ -1,10 +1,10 @@
 {
-  "name": "Vite/React/TailwindCSS Plugin",
-  "description": "A Cross Browser Template for Firefox",
+  "name": "Cat Facts",
+  "description": "Learn random facts about cats",
   "version": "1.0.0",
-  "manifest_version": 2,
-  "browser_action": {
-    "default_popup": "popup.html",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
     "default_title": "Open the popup"
   },
   "optional_permissions": [
@@ -25,10 +25,9 @@
     }
   ],
   "background": {
-    "page": "background.html",
-    "persistent": false
+    "page": "background.html"
   },
   "icons": {
-    "128": "vite.svg"
+    "128": "logo128.png"
   }
 }
