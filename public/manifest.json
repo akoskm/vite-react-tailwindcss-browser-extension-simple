@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "manifest_version": 3,
   "action": {
-    "default_popup": "index.html",
+    "default_popup": "popup.html",
     "default_title": "Open the popup"
   },
   "optional_permissions": [
@@ -28,6 +28,6 @@
     "page": "background.html"
   },
   "icons": {
-    "128": "logo128.png"
+    "128": "vite.svg"
   }
 }
