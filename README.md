@@ -2,6 +2,13 @@
 
 React + TailwindCSS bundled with Vite.
 
+# Demo
+
+The extensions when enabled modifies https://blank.org. Clicking the "Click me!" button also sends a message to the background script.
+
+![extension-demo](https://github.com/akoskm/vite-react-tailwindcss-browser-extension-simple/assets/3111627/a2916c28-e249-43c4-9088-8aa01320a45d)
+
+
 # Installation
 ```
 npm i
