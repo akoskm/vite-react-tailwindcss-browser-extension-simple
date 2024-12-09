@@ -14,11 +14,11 @@
     "build:chrome": "cross-env NODE_ENV=production run-s build:js build:background:chrome build:web build:manifest:chrome"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.3.1"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18.3.11",
+    "@types/react": "^19.0.1",
     "@types/react-dom": "^18.3.1",
     "@types/webextension-polyfill": "^0.12.1",
     "@vitejs/plugin-react": "^4.3.4",
