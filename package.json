@@ -15,11 +15,11 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.3.1"
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.1",
+    "@types/react-dom": "^19.0.4",
     "@types/webextension-polyfill": "^0.12.3",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.21",
